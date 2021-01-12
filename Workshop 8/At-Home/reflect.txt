@@ -1,0 +1,78 @@
+Name: Sahil Patel
+Seneca Student ID: 159-065-176
+Seneca Email: spatel392@myseneca.ca
+Date Started: November/16th/2020
+Date Due: November/22nd/2020
+Prof Name: Cornel Barna
+Class Section: NBB
+Decleration: I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+********************************************************************************************************************************************************
+QUESTION 1: the advantage that smart pointer syntax provides. Use example from your code to support your explanation.
+- Handles deallocating and allocating memory for us, dont have to do it ourselves
+	- calls destructor by itself when its time to be destroyed 
+
+MY RAW POINTER NEEDS A DELETE: 
+
+List<Product> mergeRaw(const List<Description>& desc, const List<Price>& price) {
+		List<Product> priceList;
+		// TODO: Add your code here to build a list of products
+		//         using raw pointers
+		for (size_t i = 0; i < desc.size(); i++)
+		{
+			for (size_t s = 0; s < price.size(); s++)
+			{
+				if (price[s].code == desc[i].code)
+				{
+					Product* point = new Product(desc[i].desc, price[s].price);
+					point->validate();
+					priceList += point;
+					delete point;
+				}
+			}
+		}
+		return priceList;
+	}
+
+
+MEANWHILE MY SMART POINTER DOES NOT NEED A DELETE SINCE IT AUTOMATICALLY DOES IT: 
+	
+List<Product> mergeSmart(const List<Description>& desc, const List<Price>& price) {
+		List<Product> priceList;
+		// TODO: Add your code here to build a list of products
+		//         using smart pointers
+		for (size_t i = 0; i < desc.size(); i++)
+		{
+			for (size_t s = 0; s < price.size(); s++)
+			{
+				if (price[s].code == desc[i].code)
+				{
+					std::unique_ptr<Product> point2(new Product(desc[i].desc, price[s].price));
+					point2->validate();
+					priceList += point2;
+				}
+			}
+		}
+		return priceList;
+	}
+
+********************************************************************************************************************************************************
+QUESTION 2: the difference between raw and smart pointer syntax in your solution.
+
+Raw Pointer:
+void operator +=(const T* point)
+
+Smart Pointer:
+void operator +=(std::unique_ptr<T>& point)
+
+- Also I did not use delete for my smart pointer because its automatically deleted.
+	- The destructor is called when smart pointer is out of the region. 
+- Also the declaration above in the smart pointer we have to use the template of <T>
+
+********************************************************************************************************************************************************
+WHAT I LEARNED
+
+- I learned how to use smart and raw pointers.
+	- how to implement them
+	- differences between them
+- I took this opportunity to read up on smart pointers as i didn't know much about them.
+	- I learned that they automatically delete so we dont have to do it ourselves 

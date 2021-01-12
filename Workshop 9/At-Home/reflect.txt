@@ -1,0 +1,25 @@
+Name: Sahil Patel
+Seneca Student ID: 159-065-176
+Seneca Email: spatel392@myseneca.ca
+Date Started: November/21st/2020
+Date Due: November/29th/2020
+Prof Name: Cornel Barna
+Class Section: NBB
+Decleration: I have done all the coding by myself and only copied the code that my professor provided to complete my workshops and assignments.
+********************************************************************************************************************************************************
+1. why was necessary to use binary files in this workshop and how did you use them
+
+- Its neccessary because the txt file has contents that we need to grab and convert. After this we would need to save it to the binary file.
+- These sorts of files are much quicker and smaller in size. 
+********************************************************************************************************************************************************
+2. why would be important to bind a function to its arguments, and how was it useful in this workshop
+- Both efficieny and performance get improved as both locking and unlocking are handled for functions in the specific threads. 
+********************************************************************************************************************************************************
+3. the advantages of using multiple threads, and how did you accomplished multi-threading in this workshop
+- the data gets processed at 2 different threads concurrently. Thus, making it quicker to process. 
+- in my code it was used in code(). 
+********************************************************************************************************************************************************
+WHAT I LEARNED IN THIS WORKSHOP
+- how to read and write data from a binary file 
+	- i kind of "struggled" with this as i was initally confused as my output didint match. 
+- understand what a thread is and how to use it 

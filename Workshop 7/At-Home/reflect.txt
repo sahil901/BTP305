@@ -1,0 +1,36 @@
+Name: Sahil Patel
+Seneca Student ID: 159-065-176
+Seneca Email: spatel392@myseneca.ca
+Date of completion: November/12th/2020
+Date Due: November/15th/2020
+Prof Name: Cornel Barna
+Class Section: NBB
+Decleration: I have written this reflection by myself.
+***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+Question 1: list all the STL functions that you have used in this workshop; explain your reasoning for choosing each one, and not another.
+
+- All of the following have been used because I could not use manual loops, specified throughout the MD file. 
+	- std::accumalate: used to add everything and get the sum 
+	- std::sort: used to sort as it says in the name. 
+	- std::copy_if: used to copy eveything in the collection of songs. 
+	- std::for_each: used for "[None]". It a simpler way to check. 
+
+***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+Question 2: present the advantages of using STL algorithms vs. implementing the functionality by yourself using loops.
+
+- One of the biggest advantages is code length. 
+	- When using lambda expressions its much quicker to code as it can all be one line whereas using loops takes alot more time. 
+***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+Question 3: the function that sorts the collection of songs receives as a parameter the field name to use; this can create errors if the client specifies an invalid field (or misspells it). How would you redesign that function to prevent the client to specify an invalid string, allowing any error to be detected by the compiler?
+
+- The function can do a check via a if statment.
+	- It would check and if there is an error then it can throw an error message via throw. 
+***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************
+WHAT I LEARNED 
+
+- I further diversified my knowledge on lamba functions as it was my primary alternative to loops for this workshop. 
+- I also used a lot of different c++ libraries. I had the chance to read up on all of them. Some new ones and some older ones that i've used multiple times.
+- I also learned to further strengthen my debug/finding errors skill(s). 
+	- I had some errors which didin't make sense at first and then once I started playing with the code it worked. 
+- I further solidifed my knowledge of iterators and for each statements.
+	- However, there are different ways to do iterators than I do them... I'd like to diversify my knowledge and try what I don't know next time. 
