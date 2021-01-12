@@ -1,0 +1,40 @@
+Name: Sahil Patel
+Seneca Student ID: 159-065-176
+Seneca Email: spatel392@myseneca.ca
+Date Started: November/15th/2020
+Date of completion: November/24th/2020
+Date Due: November/28th/2020
+Prof Name: Cornel Barna
+Class Section: NBB
+Decleration: I have done all the writing by myself. 
+***********************************************************************************************************************************
+MS1 Comments:
+- Straightforward.
+***********************************************************************************************************************************
+MS2 Comments:
+- Straightforward.
+***********************************************************************************************************************************
+MS3 Comments: 
+- Struggled alot with this milestone. 
+	- Some parts of the workstation threw me off but at the end it was straightforward in comparison to LineManger. 
+		- the run function is VERY DIFFIUCLT because it brings everything together.
+			- conceptually the most difficult thing 
+			- drew the station to station diagram but had it wrong, when i went to your lecture on MON it made sense. 
+		- I had some endless loops so i had to add a manual break to ensure it breaks off. 
+		- the displaystationstored has been one of the most difficult things in this milestone conceptually. 
+- however, once figured it out it all acctually made sense
+
+- i also created my own function to reduce repetition. 
+- at first for some reason the matrix compiler did not like it but after trouble shooting i figured it out and cleaner code now!
+
+
+- I finished a couple days prior to submitting to clean up code and make it look "prettier".
+- i learned how to use deques and understand different ways to code as we can also use algorithms and for each statements. 
+- i leanred to debug ahaha, many small issues which i needed to step through to fix isssues. 
+- some issues with spacing confused me, made me more aware of the prior files and that they need to work properly as well. 
+
+- pleasently surpised that i didint have leaks when i first ran it on matrix and only the spacing issues mentioned prior. 
+
+overall, a very challenging milestone which pushed me to think outside the box and draw the flow like we did in the class.
+thoroughly learned and applied all different concepts that you had taught us in class. looking forward for the final ps. make it easy :)
+***********************************************************************************************************************************
