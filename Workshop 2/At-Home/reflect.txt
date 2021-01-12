@@ -1,0 +1,41 @@
+Name: Sahil Patel
+Seneca Student ID: 159-065-176
+Seneca Email: spatel392@myseneca.ca
+Date of completion: October/3rd/2020
+Date Due: October/4th/2020
+Prof Name: Cornel Barna
+Class Section: NBB
+Decleration: I have written this reflection myself.
+****************************************************************************************************************************************************************************
+Question 1: The reason for the significant time difference between the copy and move operations
+
+The reason there is a significant time difference between copy and move operations because 
+the addresses of the actual resources get reassigned to an other resource by the move operations, so no actual copying is done.
+
+Copy makes a copy of the info from original object to a newly created one. 
+Meanwhile, move sends information from original object to a new object that is near the end of its lifetime. 
+Copy = lvalue while Move = rvalue. 
+Move uses less memory therefore being faster. 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+WHAT I LEARNED IN THIS WORKSHOP
+
+I managed to learn a variety of things throughout this workshop. 
+- I learned that we use move operations only when the object is near its death. 
+
+- I also learned how move and copy semantics are different from eachother and why one is faster than the other.
+	Explained in the question above to the best of my abilities
+
+- This was the first time i've heard about the chrono library. I used it to monitor time in this workshop. 
+	Read up about it on cppreference and cplusplus
+
+- Reading files was something i wasn't too familar with but I learned how to both open, close, and read files. 
+	Read up about it on cppreference and cplusplus 
+
+STRUGGLES
+- I struggled with the one-argument constructor because i was not too familar on how to read and manipulate files. 
+	Therefore to learn, I read up on it from cppreference and cplusplus, which are 2 websites you have recommended in your lectures
+
+- I had some matrix issues and I confused on why the output was not matching but then through debugging and matrix trials 
+	I found that i was not initalizing my variables in places I needed. Once that was done, my code ran. 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+

@@ -1,0 +1,67 @@
+Name: Sahil Patel
+Seneca Student ID: 159-065-176
+Seneca Email: spatel392@myseneca.ca
+Date of completion: October/10th/2020
+Date Due: October/11th/2020
+Prof Name: Cornel Barna
+Class Section: NBB
+Decleration: I have written this reflection by myself.
+****************************************************************************************************************************************************************************
+Question 1: Explain in the reflection why we do not split a module into *.h and *.cpp like you did in the previous workshops.
+
+- The compiler needs to have access to the implementation of the function in order to instantiate them with the template argument. 
+- If the implementation isn't in the .h then its not accessible to the compiler and wouldn't be able to instantiate the template.  
+- So template declaration and definition should be in .h 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Question 2: Explain in the reflection what = initial in the prototype means.
+
+- The prototype means that the variable has a default initializer of the typename V.
+
+CODE: 
+
+PairSummable(const K& key, const V& value = initial_val) : Pair<K, V>(key, value) 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Question 3: The reason for specializing the operator+=() member function.
+
+- Template specialization defines the exception to the template definition.
+In the w3_p2.cpp, we are concatenating a string with another string and then a string with an int. 
+Non-templated functions would be used by the compiler first before the template, so the function would be called instead of the template.  
+Therefore, Specialization on its own declares the types and does not utilize template parameters.
+
+CODE: 
+
+template<>
+PairSummable<std::string, std::string>& PairSummable<std::string, std::string>::operator+=(const PairSummable<std::string, std::string>& s)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Question 4: The reason for specializing the initial value for a summation.
+
+- We have to specialize the intial value for the summation because we want to set the safe empty state. 
+- It could lead to undefined behavious, and it'll be ready to use once its constructed. Therefore, it makes sure that theres no garbage value. 
+- Therefore, in this case initial_val would be set to 0. 
+
+CODE: 
+
+	template<>
+	std::string PairSummable<std::string, std::string>::initial_val = "";
+
+	template<>
+	int PairSummable<std::string, int>::initial_val = 0;
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Question 5: The reason for defining the class variable outside the class definition.
+
+- We do this because we have static vars in the program. 
+- So, the same var will be accessed by every instance w/o making the var repeadately. 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+WHAT I LEARNED IN THIS WORKSHOP
+
+- I learned how to make templated classes and how they essentially work in c++. It's something that I haven't done much, but throughout this lab I did a lot of reading up on it. 
+- I also learned how to derive templated classes from one another 
+- As well as Inclusion Polymorphism and how it affects the code 
+- Working with specalized functions (templated)
+
+WHAT I STRUGGLED WITH IN THIS WORKSHOP
+
+- This workshop was very tedious. 
+	- I had redefinition errors for some reason. However, visually my code looked correct. I spent a few days trying to figure out the issue as it wasn't only a VS issue. I rewrote my code and then it worked finally.   
+	- the accumalte function was very difficult, through trial and error i finally got it 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------

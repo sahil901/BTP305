@@ -1,0 +1,51 @@
+Name: Sahil Patel
+Seneca Student ID: 159-065-176
+Seneca Email: spatel392@myseneca.ca
+Date of completion: October/15th/2020
+Date Due: October/18th/2020
+Prof Name: Cornel Barna
+Class Section: NBB
+Decleration: I have written this reflection by myself.
+****************************************************************************************************************************************************************************
+Question 1: The difference between the implementations of a composition and an aggregation.
+
+- Composition (Part Of Relationship)
+	- An example: if parent is dead, child dies 
+	- Therefore, the objects life is determined by function 
+	- Parent class dies then the child class dies as well
+	- Handles own resources 
+
+- Aggregation (Has-A Relationship)
+	- An example: if parent is dead, child alive
+	- Therefore, the objects life is not determined by the function
+	- Parent class dies then the child class can continue to live.
+	- Doesn't handle own resources 
+
+These differences make the implementations of composition and aggregation different from eachother.  
+****************************************************************************************************************************************************************************
+Question 2: The difference between the implementations of move and copy functions in a composition and an aggregation.
+
+- As stated above for composition: "if parent is dead, child dies"
+	- Therefore we cannot manipualte (move or copy) an object once its deleted... its gone forever. 
+	-  Makes a copy of the object
+
+- As stated above for aggregation: "if parent is dead, child alive"  
+	- Therefore its own life is determined by itself
+		- It decides its own lifecycle
+		- Copies the address to current object.
+****************************************************************************************************************************************************************************
+WHAT I LEARNED IN THIS WORKSHOP
+
+- I was having some issues where it was not recognizing some of my variables.
+	- Therefore, I praticed debugging to further develop my programming skills.
+
+- I learned how to parse strings and how to handle an array of pointers 
+	- I understood that theres multiple ways to do this (can also use trim functions).
+	- I familiarized myself with stoi and substr.
+	- I learned how to use find() and how/what it does. 
+
+- I learned how to tell the difference between composition and aggregation classes while implementing.
+	- Explained in the reflection questions above. 
+
+- I also enchanced my ability to reduce code repetition. 
+	- I managed to remove repeating lines of code to minimize the coding and developed good programming practices.  

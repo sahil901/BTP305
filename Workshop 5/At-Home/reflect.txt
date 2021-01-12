@@ -1,0 +1,41 @@
+Name: Sahil Patel
+Seneca Student ID: 159-065-176
+Seneca Email: spatel392@myseneca.ca
+Date of completion: October/24th/2020
+Date Due: October/25th/2020
+Prof Name: Cornel Barna
+Class Section: NBB
+Decleration: I have written this reflection by myself.
+***************************************************************************************************************************************************************************************************************************************************************************
+Question 1: The difference between the implementations/utilizations of a functor and a lambda expression. When is appropriate to use each one?
+
+- When some piece of code is needed to be executed again and again a functor is better meanwhile a lambda is superior for defining a function where its invoked. 
+***************************************************************************************************************************************************************************************************************************************************************************
+Question 2: The constructor for SpellChecker generates an exception in certain conditions. How would you change your code to achieve the same result, but without exceptions (both on the constructor and on the client side)? Compare the two solutions.
+
+- I would make sure that SpellChecker is in a empty state so it can't manipulate anything afterwards or i would make sure both movie and book are in empty state and then make sure that they're both null. 
+***************************************************************************************************************************************************************************************************************************************************************************
+Question 3: The classes Movie and Book contain almost identical logic in loading data from the file. How would you redesign the classes in order not to duplicate that logic? 
+
+- I'd make a base class that can be inherited by both the Movie and Book since they would have basically idential logic. This would reduce code repetition. 
+***************************************************************************************************************************************************************************************************************************************************************************
+Question 4: The classes Movie and Book are instantiated from the main() function using a custom constructor, but they also contain a default constructor. Is the default constructor necessary? Could you remove it? Justify your answer.
+
+- I personally believe that we dont need the default constructor. Therefore, we can remove it. But if we dont have it to set everything to a empty state, garbage value could go through and mess up the output. 
+- It's good to set everything to safe empty state (good coding prac), removes any possibiltiy of ambiguity. 
+***************************************************************************************************************************************************************************************************************************************************************************
+WHAT I LEARNED IN THIS WORKSHOP
+
+This workshop was quite challenging in terms of timing and some concepts that I'm not that strong in (lambda's, functors, and sometimes templates). 
+	- Balancing this and doing the midterm was both difficult but I managed to start early and finally finished :)
+- I learned how to use try and catch and the different methods that it has. 
+	- tell the difference between the different exceptions and what they all mean  
+- I also learned how to use a lambda expression which was surprisingly simpler than I imagined.
+- I continued to solidify my knowledge on templates via the usage of templated classes. 
+- I learned how to use a functor. 
+- I further used my knowledge on dynamic memory and how to properly handle it. 
+- I really learned trying to find errors as I had made some mistakes which took a extensive amount of time to figure out. 
+	- I had used something from the string library and didint include the string library at the top and I sat there for a number of minutes trying to figure out why i was having that error.
+	- I had also removed a closing curly and it took a long time to find where I had removed it. I looked at the files you had on the github and compared it to mine and both looked identical but mine has the completed functions. 
+		- I finally found it and then my code ran and then I took it from there.
+	- I was also really confused on the missing_text.txt for some reason and then I continued coding and trying to finish the program to realize its not the file that we need to include lol (carefully read instructions next time ahaha). 

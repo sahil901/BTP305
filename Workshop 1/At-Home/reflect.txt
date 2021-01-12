@@ -1,0 +1,52 @@
+Name: Sahil Patel
+Seneca Student ID: 159-065-176
+Seneca Email: spatel392@myseneca.ca
+Date of completion: September/23rd/2020
+Due Date: September/27th/2020
+Prof Name: Cornel Barna
+Class Section: NBB
+Decleration: I have written this reflection by myself. 
+****************************************************************************************************************************************************************************
+Question 1: The difference between internal and external linkage using examples from your code
+
+Internel linkage is defined with the static keyword. When a variable or function has internal linkage, it means that it is only visible from the current translational unit. 
+Meanwhile, External linkage is defined with the extern keyword. When a variable or function has external linkage, it means thats its global and its able to be shared between translation units. 
+Therefore, when talking about internal linkage its everything in the scope of the translation unit. While external linkage is things that are able to be accessed through the entire program. 
+
+Example of Internal Linkage (static) from my code: static unsigned int counter;
+- I used static to define my counter so that i can tack the number of times display() was called with my multiple event objects.
+
+Example of External Linkage (extern) from my code: extern unsigned int g_sysClock;
+- I used extern to define my global variable named g_sysClock so that it can be accessed anywhere throughout the entire program.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Question 2: What are static variables and how were they useful in this workshop. 
+
+Static variables are variables that are apart of internal linkage and they're only visible from their own translational unit. 
+Once the translation unit they're defined in is terminated, the lifetime of that variable is also terminated.
+Another thing, the value has to remain the same throughout the lifetime of the program. 
+Therefore, the value that is assigned to it is going to get carried through function calls. 
+
+Specifcally, static variables were useful for this workshop. They were because helpful because they assisted me in keeping track of how many times the display function was called.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Question 3: The changes that you made in upgrading your Event class.
+
+I made several changes to my event class. To begin, I identified that first thing I needed to do which was make the string to handle any length. 
+Therefore, in order to make the C-style null-terminated string of any length I made it a pointer to char*. Making it a char* means 
+that I have to use dynamic memory. Since now I have dynamic memory, I realized that I would need a destructor in order 
+to deallocate the allocated memory to avoid memory leaks. I also added 2 special member functions to manage those allocations that were going to be made. 
+The first special member function is the copy constructor and the second special member function is the copy assignment operator. 
+These are the changes that I thought would be effiecent for the completion of this workshop. 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+WHAT I LEARNED IN THIS WORKSHOP
+
+In this workshop I have learned how to deal with dynamic memory and to properly allocate and deallocate it. 
+Matrix assisted me in to doing so. It said that I had a memory leak and it made me debug the code to find exactly where 
+the leak occured and through trial and error, I deallocated it. Learning both debugging and how to deal with memory leaks. 
+
+Next, I learned the clear difference between static variables and extern variables. I had a rough understanding of what they were 
+but after coding them I could differenciate them with ease. This helped me learn how to access a variable defined in a seperate 
+translation unit and also how to declare a variable that remains in the memory of the entire lifetime of the program.
+
+Lastly, I learned alot more about the copy assignment operator. This special member function is used for assigning already pre-existing
+objects to new objects and that we actually overload the " = " operator.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
